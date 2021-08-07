@@ -1,6 +1,7 @@
 # GCTest_QuestRiftVRTK33
 
 This is a test project for building to Oculus Quest using VRTK 3.3, Oculus Integration 1.37, and Unity 2018.4.9f1
+These are the tools used for Groove Catcher development as of mid-2021.
 
 # What Works So Far?
 
