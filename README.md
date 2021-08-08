@@ -7,8 +7,13 @@ These are the tools used for Groove Catcher development as of mid-2021.
 
 ## Building from Unity
 
-With Unity 2018, it's highly important to install the proper Android SDK tools, otherwise Unity will not even recognize the Quest. [Following this article](https://circuitstream.com/blog/oculus-quest-unity-setup/), you can use Android Studio package manager to download the proper SDKs and SDK Tools. For Player, Build, and Quality settings, use the settings listed [here](https://developer.oculus.com/documentation/unity/unity-conf-settings/).
+With Unity 2018, it's highly important to install the proper Android SDK tools, otherwise Unity will not even recognize the Quest. [Following this article](https://circuitstream.com/blog/oculus-quest-unity-setup/), you can use Android Studio package manager to download the proper SDKs and SDK Tools. 
 
+For Player, Build, and Quality settings, use the settings listed [here](https://developer.oculus.com/documentation/unity/unity-conf-settings/).
+This also has some `adb` instruction for CLI access to the headset and loading an apk onto the headset.
+
+* NOTE - if your device doesn't show up in the Build Settings under `Run Device`, first make sure it's connected properly by using `adb` to run `adb devices -l`. If it's recognized, close the Unity project, delete the project's `Library` folder and delete the Unity cache folders (`<user home>\AppData\LocalLow\Unity`). Then reopen the project.
+  
 Oculus Integration 1.37 will need to be installed from the [Unity Integration Archive](https://developer.oculus.com/downloads/package/unity-integration-archive/1.37.0/). This was simply imported and the OVRCameraRig was used.
 
 An important note is that an older version of Unity 2018, such as 2018.4.9f1, is completely necessary. For whatever reason, building with the LTS version (2018.4.32f1 at the time) will always build with a black screen.
